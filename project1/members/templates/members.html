@@ -3,10 +3,16 @@
 <head>
 
     <meta charset="UTF-8">
-    <mata name="viewport" contact="width=devicee-width">
+    <mata name="viewport" contact="width=devicee-width, intital">
     <title>สมาชิก</title>
 
 </head>
 <body>
     <h2>สมาชิก</h2>
+    <ul>
+        {% for x in mymembers %}
+          <li>{{ x.firstname }} {{ x.lastname }}</li>
+        {% endfor %}
+      </ul>      
 </body>
+</html>
